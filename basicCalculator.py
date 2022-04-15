@@ -1,7 +1,3 @@
-from audioop import add
-from re import sub
-
-
 a = float(input("Enter first number... "));
 b = float(input("Enter second number... "));
 
