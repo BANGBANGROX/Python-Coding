@@ -1,3 +1,6 @@
+from typing import List
+
+
 class Solution(object):
     def check(self, row: int, col: int, state: List[str], n: int) -> bool:
         startRow = row - 1
