@@ -8,8 +8,16 @@ class Solution:
 
         for i in range(n):
             dp[i][i] = True
+            if maxLen < 1:
+                maxLen = 1
+                start = i
+                end = i
             if i + 1 < n and s[i] == s[i + 1]:
                 dp[i][i + 1] = True
+                if maxLen < 2:
+                    maxLen = 2
+                    start = i
+                    end = i + 1
 
         for length in range(3, n + 1):
             for i in range(0, n - length + 1):
