@@ -52,7 +52,7 @@ class CountInversionsService:
 
 
 class Solution:
-    def greatCount(self, n: int, s: str) -> int:
+    def great_count(self, n: int, s: str) -> int:
         prefix_array = [0] * n
         answer = 0
 
@@ -86,7 +86,7 @@ if __name__ == "__main__":
         S = (input())
 
         obj = Solution()
-        res = obj.greatCount(N, S)
+        res = obj.great_count(N, S)
 
         print(res)
 
