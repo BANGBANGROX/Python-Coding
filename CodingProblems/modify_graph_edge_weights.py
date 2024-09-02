@@ -57,8 +57,8 @@ class Solution:
         self.__source = source
 
         for i in range(len(edges)):
-            u = edges[i][0]
-            v = edges[i][1]
+            u: int = edges[i][0]
+            v: int = edges[i][1]
             self.__graph[u].append([v, i])
             self.__graph[v].append([u, i])
 
