@@ -38,12 +38,12 @@ class Solution:
 # {
 # Driver Code Starts
 if __name__ == "__main__":
-    t = int(input().strip())
+    t: int = int(input().strip())
     for _ in range(t):
-        arr1 = list(map(int, input().strip().split()))
-        arr2 = list(map(int, input().strip().split()))
-        ob = Solution()
-        ans = ob.maxPathSum(arr1, arr2)
+        arr1: list[int] = list(map(int, input().strip().split()))
+        arr2: list[int] = list(map(int, input().strip().split()))
+        ob: Solution = Solution()
+        ans: int = ob.maxPathSum(arr1, arr2)
         print(ans)
 
 # } Driver Code Ends
