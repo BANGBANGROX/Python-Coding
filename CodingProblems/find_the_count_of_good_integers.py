@@ -38,7 +38,7 @@ class Solution:
         if count[0] == 0:
             return total_permutations
 
-        permutations_with_leading_zeroes = self.__factorial[n - 1]
+        permutations_with_leading_zeroes: int = self.__factorial[n - 1]
         permutations_with_leading_zeroes //= self.__factorial[count[0] - 1]
 
         for i in range(1, 10):
