@@ -30,3 +30,16 @@ class Solution:
         self.__word_set = set(dictionary)
 
         return self.__min_extra_char_handler(idx=0)
+
+
+if __name__ == "__main__":
+    test_cases: int = int(input())
+
+    for _ in range(test_cases):
+        s: str = input()
+        n: int = int(input())
+        dictionary: list[str] = [None] * n
+        for i in range(n):
+            dictionary[i] = input()
+
+        print(Solution().minExtraChar(s=s, dictionary=dictionary))
