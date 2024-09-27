@@ -4,8 +4,8 @@ class MyCalendar:
         self.__intervals: list[list[int]] = []
 
     def book(self, start: int, end: int) -> bool:
-        for interval in self.__intervals:
-            if start < interval[1] and end > interval[0]:
+        for (curr_start, curr_end) in self.__intervals:
+            if start < curr_end and end > curr_start:
                 return False
 
         self.__intervals.append([start, end])
