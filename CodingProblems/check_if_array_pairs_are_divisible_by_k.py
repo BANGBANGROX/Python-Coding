@@ -8,9 +8,8 @@ class Solution:
         if count[0] % 2 != 0:
             return False
 
-        for first_rem in range(1, k):
-            second_rem: int = (k - first_rem) % k
-            if count[first_rem] != count[second_rem]:
+        for first_rem in range(1, k // 2 + 1):
+            if count[first_rem] != count[k - first_rem]:
                 return False
 
         return True
