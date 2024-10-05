@@ -10,8 +10,8 @@ class Solution:
             return -1
 
         target_sum: int = (total_sum * 2) // n
-        count: dict[int, int] = defaultdict(int)
-        answer = 0
+        count: defaultdict[int, int] = defaultdict(int)
+        answer: int = 0
 
         for num in skill:
             count[num] += 1
