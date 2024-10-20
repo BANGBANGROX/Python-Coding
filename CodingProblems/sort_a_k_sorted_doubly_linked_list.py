@@ -11,10 +11,10 @@ class DLLNode:
 # A node of the doubly linked list
 class DLLNode:
 
-    def __init__(self, val):
-        self.data = val
-        self.next = None
-        self.prev = None
+    def __init__(self, val: int):
+        self.data: int = val
+        self.next: DLLNode = None
+        self.prev: DLLNode = None
 
 
 import heapq
