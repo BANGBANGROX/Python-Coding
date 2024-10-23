@@ -24,13 +24,13 @@ class Solution:
 # Initial Template for Python 3
 
 if __name__ == "__main__":
-    tc = int(input())
+    tc: int = int(input())
     while tc > 0:
-        arr = list(map(int, input().strip().split()))
-        x = int(input().strip())
-        y = int(input().strip())
-        ob = Solution()
-        ans = ob.sameOccurrence(arr, x, y)
+        arr: list[int] = list(map(int, input().strip().split()))
+        x: int = int(input().strip())
+        y: int = int(input().strip())
+        ob: Solution = Solution()
+        ans: int = ob.sameOccurrence(arr, x, y)
         print(ans)
         tc -= 1
 
