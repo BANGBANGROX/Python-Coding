@@ -5,10 +5,10 @@ class Solution:
     # Function to partition the array around the range such
     # that array is divided into three parts.
     def threeWayPartition(self, nums: list[int], a: int, b: int) -> None:
-        n = len(array)
-        i = 0
-        j = n - 1
-        itr = 0
+        n: int = len(array)
+        i: int = 0
+        j: int = n - 1
+        itr: int = 0
 
         while itr < n and j >= itr:
             if nums[itr] < a:
