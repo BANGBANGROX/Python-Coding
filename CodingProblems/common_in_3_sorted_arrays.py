@@ -41,13 +41,13 @@ class Solution:
 # Initial Template for Python 3
 
 if __name__ == "__main__":
-    t = int(input())
+    t: int = int(input())
     for _ in range(t):
-        arr = list(map(int, input().split()))
-        brr = list(map(int, input().split()))
-        crr = list(map(int, input().split()))
-        ob = Solution()
-        res = ob.commonElements(arr, brr, crr)
+        arr: list[int] = list(map(int, input().split()))
+        brr: list[int] = list(map(int, input().split()))
+        crr: list[int] = list(map(int, input().split()))
+        ob: Solution = Solution()
+        res: list[int] = ob.commonElements(arr, brr, crr)
         if len(res) == 0:
             print(-1)
         else:
