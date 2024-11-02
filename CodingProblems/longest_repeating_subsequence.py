@@ -2,10 +2,10 @@
 
 
 class Solution:
-    def LongestRepeatingSubsequence(self, s):
+    def LongestRepeatingSubsequence(self, s: str) -> int:
         # Code here
-        n = len(s)
-        dp = [[0 for _ in range(n + 1)] for _ in range(n + 1)]
+        n: int = len(s)
+        dp: list[list[int]] = [[0 for _ in range(n + 1)] for _ in range(n + 1)]
         
         for i in range(n - 1, -1, -1):
             for j in range(n - 1, -1, -1):
@@ -22,11 +22,11 @@ class Solution:
 # Initial Template for Python 3
 
 if __name__ == "__main__":
-    T = int(input())
+    T: int = int(input())
     for i in range(T):
-        str = input()
-        ob = Solution()
-        ans = ob.LongestRepeatingSubsequence(str)
+        s: str = input()
+        ob: Solution = Solution()
+        ans: int = ob.LongestRepeatingSubsequence(s)
         print(ans)
 
 # } Driver Code Ends
