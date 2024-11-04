@@ -1,5 +1,5 @@
 class Solution:
-    def __init__(self):
+    def __init__(self) -> None:
         self.__s1: str = None
         self.__s2: str = None
         self.__dp: list[list[int]] = None
