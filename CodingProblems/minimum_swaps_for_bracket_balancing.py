@@ -1,12 +1,12 @@
 # User function Template for python3
 class Solution:
-    def minimumNumberOfSwaps(self, s):
+    def minimumNumberOfSwaps(self, s: str) -> int:
         # code here
-        open_cnt = 0
-        close_cnt = 0
-        imbalance = 0
-        answer = 0
-        
+        open_cnt: int = 0
+        close_cnt: int = 0
+        imbalance: int = 0
+        answer: int = 0
+
         for ch in s:
             if ch == "[":
                 open_cnt += 1
@@ -15,7 +15,7 @@ class Solution:
             else:
                 close_cnt += 1
             imbalance = close_cnt - open_cnt
-        
+
         return answer
 
 
@@ -23,11 +23,11 @@ class Solution:
 # Driver Code Starts
 # Initial Template for Python 3
 if __name__ == "__main__":
-    t = int(input())
+    t: int = int(input())
     for _ in range(t):
 
-        S = str(input())
-        ob = Solution()
+        S: int = str(input())
+        ob: Solution = Solution()
         print(ob.minimumNumberOfSwaps(S))
         print("~")
 # } Driver Code Ends

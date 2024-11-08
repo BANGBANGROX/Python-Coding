@@ -1,11 +1,11 @@
-def countRev(s):
+def countRev(s: str) -> int:
     # your code here
-    n = len(s)
+    n: int = len(s)
 
     if (n & 1) > 0:
         return -1
 
-    stack = []
+    stack: list[str] = []
 
     for ch in s:
         if ch == "}":
@@ -16,8 +16,8 @@ def countRev(s):
         else:
             stack.append(ch)
 
-    answer = len(stack) // 2
-    open_brackets = 0
+    answer: int = len(stack) // 2
+    open_brackets: int = 0
 
     while len(stack) > 0 and stack[-1] == "{":
         stack.pop()
@@ -30,9 +30,9 @@ def countRev(s):
 
 # {
 # Driver Code Starts
-t = int(input())
+t: int = int(input())
 for tc in range(t):
-    s = input()
+    s: str = input()
     print(countRev(s))
 
     print("~")
