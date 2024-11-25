@@ -1,7 +1,7 @@
 class Solution:
     def maxMatrixSum(self, matrix: list[list[int]]) -> int:
         non_positive_elements: int = 0
-        min_value = 10**9
+        min_value: int = 10**9
         answer: int = 0
 
         for row in matrix:
