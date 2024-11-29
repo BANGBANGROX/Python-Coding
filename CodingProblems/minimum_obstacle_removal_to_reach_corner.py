@@ -8,7 +8,7 @@ class Solution:
         pq: list[list[int]] = []
         INF: int = 10**9
         distance: list[list[int]] = [[INF for _ in range(n)] for _ in range(m)]
-        directions = [[1, 0], [0, 1], [-1, 0], [0, -1]]
+        directions: list[list[int]] = [[1, 0], [0, 1], [-1, 0], [0, -1]]
 
         distance[0][0] = 0
         heapq.heappush(pq, [distance[0][0], 0, 0])
@@ -24,7 +24,7 @@ class Solution:
                 new_x: int = x + direction[0]
                 new_y: int = y + direction[1]
                 if new_x >= 0 and new_x < m and new_y >= 0 and new_y < n:
-                    new_distance = current_distance + grid[new_x][new_y]
+                    new_distance: int = current_distance + grid[new_x][new_y]
                     if new_x == m - 1 and new_y == n - 1:
                         return new_distance
                     if new_distance < distance[new_x][new_y]:
