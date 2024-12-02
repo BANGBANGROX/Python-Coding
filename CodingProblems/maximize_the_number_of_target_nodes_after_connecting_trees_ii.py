@@ -46,8 +46,6 @@ class Solution:
         self.__answer = [max(self.__count[0], self.__count[1]) for _ in range(m)]
         self.__count = [0, 0]
 
-        print(self.__answer)
-
         for i in range(m):
             if len(tree1[i]) == 1:
                 self.__dfs(i, -1, 0)
