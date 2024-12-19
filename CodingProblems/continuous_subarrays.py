@@ -26,7 +26,7 @@ class Solution:
 
 if __name__ == "__main__":
     test_cases: int = int(input())
-    
+
     for _ in range(test_cases):
         n: int = int(input())
         nums: list[int] = [0] * n
