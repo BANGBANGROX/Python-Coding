@@ -6,8 +6,8 @@ class Solution:
         right: int = len(arr) - 1
 
         while left <= right:
-            mid = (left + ((right - left) >> 1))
-            missing_cnt = arr[mid] - mid - 1
+            mid: int = (left + ((right - left) >> 1))
+            missing_cnt: int = arr[mid] - mid - 1
             if missing_cnt < k:
                 left = mid + 1
             else:

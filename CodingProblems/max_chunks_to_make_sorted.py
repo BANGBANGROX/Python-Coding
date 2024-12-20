@@ -2,7 +2,7 @@ class Solution:
     def maxChunksToSorted(self, arr: list[int]) -> int:
         answer: int = 0
         n: int = len(arr)
-        max_value = 0
+        max_value: int = 0
 
         for i in range(n):
             max_value = max(max_value, arr[i])
