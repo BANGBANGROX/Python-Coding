@@ -6,11 +6,11 @@
 
 # User function Template for python3
 class Solution:
-    def longestSubarray(self, arr, k):
-        first_index = {}
-        n = len(arr)
-        running_counter = 0
-        answer = 0
+    def longestSubarray(self, arr: list[int], k: int) -> int:
+        first_index: dict[int, int] = {}
+        n: int = len(arr)
+        running_counter: int = 0
+        answer: int = 0
 
         for i in range(n):
             if arr[i] > k:
