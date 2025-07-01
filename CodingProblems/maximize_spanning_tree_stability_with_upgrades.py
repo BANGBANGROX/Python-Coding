@@ -85,5 +85,5 @@ if __name__ == "__main__":
         for i in range(m):
             edges.append([int(input()) for _ in range(4)])
         k: int = int(input())
-        
+
         print(Solution().max_stability(n, edges, k))
